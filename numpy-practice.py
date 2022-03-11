@@ -46,3 +46,11 @@ arr2.dtype
 arr2.shape # (3,3)
 arr2.size # show 9 items
 arr2.itemsize #show in bytes
+
+# Slice
+arr1[1:5:2] #1D
+arr2[1:2,1:2] #2D
+
+# Index Operator
+arr1[[1,4]]
+print(arr2[arr2<5]*2)

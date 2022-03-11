@@ -21,3 +21,7 @@ print(arr3, arr3.ndim, arr3[1][1][2])
 
  [[ 7 99  9]
   [10 11 12]]] 3 12"""
+
+# check data type for each Array
+print(arr3.dtype)
+

@@ -25,3 +25,6 @@ print(arr3, arr3.ndim, arr3[1][1][2])
 # check data type for each Array
 print(arr3.dtype)
 
+# Matrix : 0,1
+print(np.zeros([3,3]))
+print(np.ones([2,2], dtype="int"))

@@ -53,4 +53,6 @@ arr2[1:2,1:2] #2D
 
 # Index Operator
 arr1[[1,4]]
-print(arr2[arr2<5]*2)
+arr2[arr2<5]**2
+
+# +,-,*,/,//,% : shape must be equal or broadcasting

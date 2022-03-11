@@ -25,6 +25,24 @@ print(arr3, arr3.ndim, arr3[1][1][2])
 # check data type for each Array
 print(arr3.dtype)
 
-# Matrix : 0,1
-print(np.zeros([3,3]))
-print(np.ones([2,2], dtype="int"))
+# Matrix : 0, 1, full, empty, Identity 
+np.zeros([3,3])
+np.ones([2,2], dtype="int")
+np.full([3,3], 7)
+np.empty([3,4])
+np.identity(3, dtype="int")
+np.eye(3,4,k=2) # k : move No.1
+
+# Linspace, Arange : No.2 in Linspace = length, No.2 in arange = steps
+np.linspace(1,10,2,endpoint=False) # endpoint = False : Not include endpoint
+np.arange(1,10,2)
+
+# Random
+np.random.random([3,3])
+
+# Attributes
+arr2.ndim 
+arr2.dtype
+arr2.shape # (3,3)
+arr2.size # show 9 items
+arr2.itemsize #show in bytes

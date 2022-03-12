@@ -56,3 +56,38 @@ arr1[[1,4]]
 arr2[arr2<5]**2
 
 # +,-,*,/,//,% : shape must be equal or broadcasting
+
+
+# Reshape & Resize : Resize will change array permanently
+arr1.reshape([5,1])
+arr1.resize([5,1])
+
+# Flatten and Ravel : change to 1D, Ravel = if r[x] changes, arr2[x] changes too.
+arr2.flatten()
+r = arr2.ravel()
+
+# Transpose switch row and column
+arr2.transpose()
+
+# Statistics
+arr1.sum()
+arr1.prod()
+arr1.mean()
+arr1.min()
+arr1.max()
+arr1.argmax() # index at max
+arr1.argmin() # index at min
+np.max(arr2, axis=1) # 2D : max of each row, axis=0 : each column
+
+# Dot product : rows and columns of both arrays must equal (Ex. [2,2] and [2,2] : a.dot(b))
+
+# Concatenate, Append, Insert (np.concatenate((a,b)), np.append(a, 100))
+np.append(arr2,[[10,20,30]], axis=0)
+np.insert(arr1,(1,3),100)
+np.insert(arr2,1,[33,44,55],axis=1)
+
+# Delete, Split
+np.delete(arr1,2)
+np.delete(arr2,2,axis=0)
+np.hsplit(arr1,3) # Seperate to new arrays in horizontally | | |
+np.vsplit(arr2,3) # Seperate to new arrays in vertically -- __
